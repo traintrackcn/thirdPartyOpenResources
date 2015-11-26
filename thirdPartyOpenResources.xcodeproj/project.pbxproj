@@ -560,7 +560,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ../3rd\n./do_lipo_for_static_lib.sh";
+			shellScript = "cd ../sh\n./do_lipo_for_static_lib.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -690,6 +690,7 @@
 		4A8E8D0C1B69108D00F48CDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -700,6 +701,7 @@
 		4A8E8D0D1B69108D00F48CDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
